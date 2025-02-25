@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function details(){
+            let s1=document.getElementById("name").value
+            let s2=document.getElementById("age").value
+            let s3=document.getElementById("course").value
+            let s4=document.getElementById("place").value
+            msg.innerHTML=s1+" \n "+s2+ "  "+s3+ "  " +s4
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter name" id="name"/>
+    <input type="number" placeholder="Enter Age" id="age"/>
+    <input type="text" placeholder="Course" id="course"/>
+    <input type="text" placeholder="Enter place" id="place"/>
+    <button onclick="details()">Submit</button>
+    <div id="msg"></div>
+    
+</body>
+</html>

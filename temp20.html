@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:flex;   
+            text-align: center;
+            justify-content: center;
+            
+        }
+       #box{
+                /* background-color: rgb(16, 16, 194); */
+                border: 2px solid orange;
+                padding: 20px;
+                width: 350px;
+                border-radius: 20px;
+                background-color:rgb(251, 244, 235);
+                
+            }
+            input{
+            background-color:darkgray;
+            padding:20px;
+            width:90%;
+        }
+        button
+        {
+            background-color:aqua;
+            padding:20px;
+            width:90%;
+        }
+       
+    </style>
+    <script>
+        
+        function showData(){
+            str=[]
+            let name=document.getElementById("name").value
+            let email=document.getElementById("email").value
+            let password=document.getElementById("password").value
+            let DOB=document.getElementById("DOB").value
+            str.push({name,email,password,DOB});
+            for(let i=0;i<str.length;i++){
+            data.innerHTML+=`${str[i].name},${str[i].email},${str[i].password},${str[i].DOB}`
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+        
+    <p><h2>NEW USER SIGNUP FORM</h2></p>
+    <p><input type="text" id="name" placeholder="Enter name"/></p>
+    <p><input type="text" id="email" placeholder="Enter Email"/></p>
+    <p><input type="password" id="password" placeholder="Enter Password"/></p>
+    <p><input type="date" id="DOB" placeholder="Enter DOB"/></p>
+    <button onclick="showData()">Register</button>
+    <div id="data"></div>
+</div>
+</div>
+</body>
+</html>

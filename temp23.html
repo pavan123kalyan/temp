@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function p(){
+            let a=document.getElementById("num").value;
+            str=""
+            for(let i=0;i<=10;i++){
+                // document.write(`${a}x ${i}=${a*i}<br>`);
+                str+=`${a} X ${i}=${a*i}<br>`
+            }
+            root.innerHTML=str   
+        }
+    </script>
+</head>
+<body onload="showForm()">
+   
+    <input type="number" id="num" onchange="p()"><br>
+    <!-- <button onclick="p()">Log in</button> -->
+    <div id="root"></div>
+</body>
+</html>

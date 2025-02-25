@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>  
+            function credentials(e){
+                let Email=document.getElementById("mail").value
+                let Password=document.getElementById("pass").value
+                if(Email=="" || Password==""){
+                    msg.innerHTML="Email and Password is mandatory"
+                    
+                }
+                else if(Email=="john@gmail.com"){
+                    if(Password=="143"){
+                    msg.innerHTML="WELCOME"
+                }
+            }
+                else{
+                    msg.innerHTML="Invalid Credentials"
+                }
+            }
+        
+        </script>
+        <style>
+            .container{
+                
+                /* border: 2px solid rgb(28, 189, 28); */
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            .box{
+                /* background-color: rgb(16, 16, 194); */
+    
+                border: 2px solid orange;
+                padding: 20px;
+                width: 350px;
+                border-radius: 20px;
+
+
+            }
+            input{
+                padding: 20px;
+                width: 90%;
+            }
+            button{
+                background-color: yellow;
+                width: 100%;
+                padding: 20px;
+                border-radius: 10px;
+                color: green;
+                font-size: xx-large;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="box">
+        <p><div id="msg"></div></p>
+        <p><input type="text" placeholder="Enter email" id="mail" ></p>
+        <br>
+        <br>
+        <p><input type="password" placeholder="Enter Password" id="pass" ></p>
+        <br>
+        <br>
+        <button onclick="credentials()">Log in</button>
+        </div>
+        </div>  
+    </body>
+    </html>

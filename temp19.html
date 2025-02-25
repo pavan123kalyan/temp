@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c{
+            background-color: aqua;
+        }
+        .d{
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function showData(){
+            // let email=document.getElementById("email").value
+            // let email=document.querySelector(".c").value
+            // let password=document.getElementById("password").value
+            // let password=document.querySelector(".d").value
+            // let email=document.getElementsByClassName(".c").value
+            let email=document.querySelector("#email").value    
+            let password=document.querySelector("#password").value
+            data.innerHTML=`${email},${password}`
+        }
+    </script>
+</head>   
+<body>
+    <h1>Login Form</h1>
+    <p><input type="text" class="c" id="email" placeholder="Email address"></p>
+    <p><input type="password" class="d" id="password" placeholder="Password"></p>
+    <button onclick ="showData()">LOG IN</button>
+    <div id="data"></div>
+</body>
+</html>
